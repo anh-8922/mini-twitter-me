@@ -25,3 +25,27 @@
     margin: 1rem 0 0 2rem;
     
 }
+
+.SearchInput {
+    margin-left: 40rem;
+    background-color: #fcfcfc;
+    padding: 5px;
+    width: 17rem;
+}
+
+.SearchInput > input, button {
+    border: none;
+    background: none;
+    color: black;
+
+}
+
+.SearchInput > input {
+    width: 90%;
+}
+
+
+
+.btn-search {
+    font-size: 1.2rem;
+}

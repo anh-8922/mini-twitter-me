@@ -1,7 +1,7 @@
 import {CiSearch} from 'react-icons/ci'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-
+import './css/pages.css';
 export default function  SearchBar (props) {
 
     const [searchText, setSearchText] = useState('');
@@ -21,6 +21,7 @@ export default function  SearchBar (props) {
     return (
         <div className="SearchInput">
             <input type='search'
+          
                    label="Enter your text"
                    placeholder="Search..."
                    value={searchText}

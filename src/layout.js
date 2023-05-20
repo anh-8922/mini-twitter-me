@@ -10,14 +10,14 @@ export default function Layout() {
     return (
         <div id="layout">
             <div id="header">
-                <Navbar bg="dark" variant="dark">
-                    <Container>
+                <Navbar bg="dark" variant="dark" style={{padding: "0"}}>
+                    <Container style={{width: "20rem", margin: "1rem", padding: "0"}}>
                     <Navbar.Brand href="#home">
                         
                         Clone the Twitter
                     </Navbar.Brand>
                     </Container>
-                    <SearchBar/>
+                    <SearchBar id="search-bar"/>
                 </Navbar>
                 
             </div>
