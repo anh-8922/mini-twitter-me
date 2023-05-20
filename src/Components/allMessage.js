@@ -19,7 +19,8 @@ export default function AllMessages() {
       {posts.map((item, index) => (
         <div key={index}>
           <div>{item.text}</div>
-          <div>Profile piture:<img src={item.owner.image} alt='profile picture'/></div> //we can use Avatar for this from bootstrap
+          <div>Profile piture:<img src={item.owner.image} alt='profile picture'/></div> 
+          {/* we can use Avatar for this from bootstrap */}
           <div>User Name:{item.owner.username}</div>
           {/* <div>{DateTime.now().toLocaleString(item.date)}</div> */}
           <div>Posted date:{DateTime.fromISO(item.date).toLocaleString(DateTime.DATETIME_MED)}</div>
