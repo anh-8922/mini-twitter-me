@@ -24,7 +24,7 @@ export default function SearchPage() {
   }, [query, data]);
 
   return (
-    <div>
+    <div style={{height: "100rem"}}>
         Search Result for "{query}"
       {filteredPosts.map((item, index) => (
         <div key={index}>
