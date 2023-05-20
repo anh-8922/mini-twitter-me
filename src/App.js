@@ -8,6 +8,7 @@ import Home from './Components/homepage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Profile from './Pages/profile';
 import AddNewMessage from './Components/addNewPost';
+import SearchPage from './Pages/SearchPage';
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,8 @@ function App() {
           <Route path="/home" element={<Home/>}/>
           <Route path="/user" element={<Profile/>}/>
           <Route path="/newpost" element={<AddNewMessage/>}/>
+          <Route path='/search' element={<SearchPage/>}/>
+          
         </Route>
       </Routes>
     </BrowserRouter>    
