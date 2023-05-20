@@ -1,11 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import useFetchData from "../CustomHooks/useFetchData";
 import TimeAgo from 'react-timeago'
 
 
 const { DateTime } = require("luxon");
 
-export default function AllMessages() {
+export default function AllMessages(props) {
   const { data } = useFetchData('https://twitter-express-server.vercel.app/posts/list');
+  const navigate = useNavigate();
 
 
   if (!data) {
@@ -13,6 +15,11 @@ export default function AllMessages() {
   }
 
   const { posts } = data;
+
+  const HandleDedicate= (postID) =>{
+    navigate('https://twitter-express-server.vercel.app/posts/listone?{postID}')
+    // /posts/listone?id
+  }
 
   return (
     <div>
@@ -26,6 +33,7 @@ export default function AllMessages() {
           <div>Posted date:{DateTime.fromISO(item.date).toLocaleString(DateTime.DATETIME_MED)}</div>
           {/* <div>{item.date}</div> */}
           <div>Posted: <TimeAgo date={item.date}/></div>
+          <button onClick={HandleDedicate}>Read</button>
         </div>
       ))}
     </div>
