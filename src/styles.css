@@ -25,5 +25,9 @@
 #nav-item {
     position: fixed;
 }
-
+#add-button {
+    background: none;
+    color: blue;
+    border: none
+}
 
