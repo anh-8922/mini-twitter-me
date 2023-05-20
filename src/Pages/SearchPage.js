@@ -12,13 +12,9 @@ export default function SearchPage() {
   useEffect(() => {
     if (data && data.posts) {
       const filtered = data.posts.filter((post) => {
-        const { date, owner, text } = post;
-        const formattedDate = new Date(date).toLocaleString();
-
-
+        const { text } = post;
+        
         return (
-          formattedDate.includes(query) ||
-          owner.username.toLowerCase().includes(query.toLowerCase()) ||
           text.toLowerCase().includes(query.toLowerCase())
         );
       });
@@ -40,4 +36,8 @@ export default function SearchPage() {
     </div>
   );
 }
+
+
+
+
 
