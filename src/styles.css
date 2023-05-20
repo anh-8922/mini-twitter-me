@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+#layout {
+    height: auto;
+}
+#main {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    
+}    
+#nav-bar {
+    background-color: #fcfcfc;
+    width: 20%;
+    height: auto;
+    border-right: 2px solid grey;
+    
+}
+
+#nav-item {
+    position: fixed;
+}
+
+
