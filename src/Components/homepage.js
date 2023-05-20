@@ -7,7 +7,7 @@ export default function Home() {
     return(
         <section id="display-main">
             
-            <div id="newpost"><AddNewMessage  /></div>
+            {/* <div id="newpost"><AddNewMessage  /></div> */}
                 
             
             <AllMessages />
