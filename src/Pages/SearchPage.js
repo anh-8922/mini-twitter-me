@@ -29,6 +29,7 @@ export default function SearchPage() {
 
   return (
     <div>
+        Search Result for "{query}"
       {filteredPosts.map((item, index) => (
         <div key={index}>
           <div>Post: {item.text}</div>
