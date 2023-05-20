@@ -14,7 +14,7 @@ export default function AllUsers() {
     <div>
       {users.map((item, index) => (
         <div key={index}>
-          <div><img src={item.image}/></div>
+          <div><img src={item.image} alt="profile pic"/></div>
           <div>User Name: {item.username}</div>
           <div>Email: {item.email}</div>
           <div>City: {item.city} Country: {item.country}</div>

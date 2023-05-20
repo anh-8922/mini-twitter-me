@@ -13,6 +13,7 @@ export default function useFetchData(url) {
       } catch (error) {
         console.error("Error occurred:", error);
         setError(error);
+        alert ("Error occurred:", error)
       }
     };
 
